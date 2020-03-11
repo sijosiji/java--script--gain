@@ -9,7 +9,7 @@
     var ismystringinside = myarray.find( function(element){return element==="hello","world";});
     console.log( ismystringinside);  // we would get the matching element
 
-    var ismystringinsde = myarray.find(function (element){return element=== 'goodbye, everyone :(';'});
+    var ismystringinsde = myarray.find(function (element){return element=== 'goodbye, everyone :(';'};
     console.log ( ismystringinside);
 
     var findanindex = myarray.findIndex(function (element){return element==2; } );
@@ -49,7 +49,7 @@
     }
 
     console.log( 'mynewvar='+mynewvar);
-    }
+    
 
     const myobj = {
         name: 'jacob',
@@ -75,3 +75,26 @@ myOtherFunction =(a,b) =>{
 }
 
 console.log( myotherfunction(34,6));
+
+
+addnums = (x = 0, y =0) => x + y;
+console.log ( addnums());
+
+findhighnum = (minimum = 0,...args) =>{ //... args will capture any number of arguments that we pass!
+    minNum = Number (minum);
+    if (minNum ===NaN) minNum =0;
+    const highnums =args.filter((element)=>minum);
+    return highnums;
+    console.log(findhighNums(5,2,20,50,3,0,10.24)); // it can be called by the name we had inbetween our paranthesis.
+    
+}
+
+addallnums = ( ...nums)=> nums.reduce ( (a,v) => a + v);
+console.log ( addallnums (64,6,10));
+})
+
+const hellovar = 'hello,world!';
+const sampleName = 'jacob'
+const mynewstring = 'hey there,my name is ${sample name}; i\'d like to to give you a big:"${hellovar}"!!';
+console.log( mynewstrig);
+
