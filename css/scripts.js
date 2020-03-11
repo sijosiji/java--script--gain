@@ -1,5 +1,5 @@
 
-
+import  "./movies.class.js";
 // .find() method:
     var myarray = [ 'hello, world!', 2, 3, true, 5, null, 38 ];
     var myvalue = myarray.find(function(element) {return element >4;} );
@@ -9,7 +9,7 @@
     var ismystringinside = myarray.find( function(element){return element==="hello","world";});
     console.log( ismystringinside);  // we would get the matching element
 
-    var ismystringinsde = myarray.find(function (element){return element=== 'goodbye, everyone :(';'};
+    var ismystringinsde = myarray.find(function (element){return element=== 'goodbye, everyone :(';'}';
     console.log ( ismystringinside);
 
     var findanindex = myarray.findIndex(function (element){return element==2; } );
@@ -97,4 +97,58 @@ const hellovar = 'hello,world!';
 const sampleName = 'jacob'
 const mynewstring = 'hey there,my name is ${sample name}; i\'d like to to give you a big:"${hellovar}"!!';
 console.log( mynewstrig);
+
+
+const newarray =[ 'hello',  ',', ',', ',',  'world', ];
+console.log ( newarray);
+console.log(...newarray);
+
+const abunchofnums = [5,10,36,58];
+console.log(addallnums(5,10,36,58));
+console.log( addallnums(...abuchoofnums));
+
+const myteststring ='greetings, programs!';
+console.log( myteststring.search( /ting/i));
+
+const myreplacestring = myteststring.replace( /programs/, 'world');
+console.log( myreplacedstring);
+{
+const myblocknestedvar =38;
+}
+
+let myblocknestedvar =55;
+myorganizename:{
+myblocknestedvar++;
+console.log(myblognestedvar)
+
+}
+
+class movie {
+    constructor(name,genre,year){
+        this.name=name;
+        this.genre=genre;
+        this.year = year;
+    }
+
+    showposter(){
+
+    
+    const info =`
+
+    name: ${this.name}
+    genre:${this.genre}
+    year: ${this.year}
+    `;
+ return info;
+    }
+
+
+    const tron = new movie( 'disney\'s TRON','ADVENTURE',1982);
+    const dragonheart = new movie( 'dragonheart', 'fantasy',1965);
+
+    console.log (tron);
+    consloe.log (dragonheart);
+
+
+
 
